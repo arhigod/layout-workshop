@@ -1,0 +1,651 @@
+* {
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    text-indent: 0;
+    border: 0;
+    border: medium none;
+    outline: none;
+    background: none repeat scroll 0 0 transparent;
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('MyriadProRegular.woff') format('woff');
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 2826px;
+    letter-spacing: 1px;
+    background-color: #f9f9fc;
+}
+
+.header-background {
+    position: fixed;
+    width: 100%;
+    height: 345px;
+    background-color: #212429;
+}
+
+.wrapper {
+    position: relative;
+    display: block;
+    width: 1528px;
+    height: 2826px;
+    margin: 0 auto;
+    background-color: #f9f9fc;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 1529px;
+    height: 54px;
+    background-color: #212429;
+}
+
+header > button {
+    position: relative;
+    display: inline-block;
+    float: right;
+    width: 54px;
+    height: 54px;
+}
+
+.left {
+    float: left;
+}
+
+header > button::before,
+header > button::before {
+    position: absolute;
+    width: 1px;
+    height: 54px;
+    margin: -27px 0 0 -27px;
+    content: '';
+    background-color: #3c3c3c;
+}
+
+header > button::after,
+header > button::after {
+    position: absolute;
+    width: 1px;
+    height: 54px;
+    margin: -27px 0 0 27px;
+    content: '';
+    background-color: #3c3c3c;
+}
+
+header > button:hover > i,
+header > button:hover > i {
+    color: #999;
+}
+
+header > button > i,
+header > button > i,
+.ico > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.logo {
+    display: inline-block;
+    width: 1170px;
+    height: 54px;
+}
+
+.logo span {
+    font-family: Hind;
+    font-size: 22.15px;
+    font-weight: 600;
+    line-height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    letter-spacing: 7px;
+    color: #fefefe;
+}
+
+.carousel {
+    position: relative;
+    width: 1530px;
+    height: 580px;
+    padding: 53px 0 0 0;
+}
+
+.carousel p {
+    font-family: Hind;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    position: absolute;
+    top: 281px;
+    left: 99px;
+    text-align: left;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+h1 {
+    font-family: Hind;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    position: absolute;
+    top: 319px;
+    left: 99px;
+    width: 500px;
+    text-align: left;
+    letter-spacing: 7px;
+    color: #fff;
+    text-shadow: 1px 2px 0 rgba(0, 0, 0, .44);
+}
+
+nav {
+    position: absolute;
+    top: 327px;
+    right: -58px;
+    transform: rotate(-90deg);
+    text-align: center;
+}
+
+nav > span {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    display: block;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+nav > button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 3px 20px 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+button + .active {
+    background-color: #999;
+}
+
+.newsletter {
+    position: relative;
+    width: 1530px;
+    height: 102px;
+}
+
+.newsletter > p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    width: 203px;
+    height: 102px;
+    padding: 0 0 0 30px;
+    text-align: left;
+    letter-spacing: 4px;
+    color: #212121;
+}
+
+.cell {
+    display: table-cell;
+    padding: 0 0 0 27px;
+    vertical-align: middle;
+}
+
+address {
+    box-sizing: border-box;
+    width: 450px;
+    height: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(221, 221, 221, 15);
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 rgba(232, 232, 232, .21);
+}
+
+.newsletter address p {
+    font-family: Hind;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    display: table-cell;
+    height: 50px;
+    padding: 0 0 0 30px;
+    text-align: left;
+    vertical-align: middle;
+    color: #999;
+}
+
+.cell > button {
+    position: relative;
+    box-sizing: border-box;
+    width: 282px;
+    height: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(221, 221, 221, 15);
+    background-color: #212121;
+    box-shadow: 0 0 1px 0 rgba(232, 232, 232, .21);
+}
+
+.newsletter button p {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+article {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 360px;
+    height: 482px;
+    margin-top: 30px;
+    padding: 30px 30px 0 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(221, 221, 221, 15);
+    background-color: #fff;
+    box-shadow: 0 0 1px 0 rgba(232, 232, 232, .21);
+}
+
+article:hover {
+    box-shadow: 0 3px 25.52px 3.48px rgba(112, 112, 112, .49);
+}
+
+.simplepost {
+    margin-top: 43px;
+}
+
+article:first-child {
+    margin-top: 76px;
+}
+
+.ico {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    margin: -48px 0 27px 0;
+    background-color: #212121;
+    box-shadow: 0 1px 3px 0 rgba(213, 213, 213, .75);
+}
+
+.date {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0 13px 0;
+    text-align: center;
+    color: #999;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin: -9px 0 7px 0;
+    text-align: center;
+    color: #212121;
+}
+
+.posttext {
+    font-family: Hind;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    color: #464646;
+}
+
+article .button {
+    position: relative;
+    display: block;
+    width: 148px;
+    height: 30px;
+    margin: 30px auto 58px auto;
+    cursor: default;
+    border-width: 0;
+}
+
+article .button::before {
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    margin: -15px 0 0 -64px;
+    content: '';
+    background-color: #d7d7d7;
+}
+
+article .button::after {
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    margin: -15px 0 0 64px;
+    content: '';
+    background-color: #d7d7d7;
+}
+
+article .button:hover .readmore {
+    color: #999;
+}
+
+article .button:hover::before {
+    width: 30px;
+    height: 1px;
+    margin: -15px 0 0 -15px;
+    content: '';
+    background: #d7d7d7;
+}
+
+article .button:hover::after {
+    width: 30px;
+    height: 1px;
+    margin: 13px 0 0 -15px;
+    content: '';
+    background: #d7d7d7;
+}
+
+.readmore {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    transform: translate(-50%, -50%);
+    color: #212121;
+}
+
+.comments > p,
+.autor {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    display: inline-block;
+    text-align: center;
+    color: #999;
+}
+
+.comments {
+    float: left;
+}
+
+.social {
+    float: right;
+}
+
+.social > i,
+.comments > i {
+    font-family: FontAwesome;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 10px;
+    text-align: center;
+    color: #464646;
+}
+
+.column {
+    display: inline-block;
+    width: 360px;
+    margin: 0 12px;
+    vertical-align: top;
+}
+
+.columns {
+    padding-bottom: 412px;
+    text-align: center;
+}
+
+.column:first-child {
+    margin-left: 0;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.post1 {
+    height: 482px;
+}
+
+.post2 {
+    height: 513px;
+}
+
+.post3 {
+    height: 489px;
+    border-style: none;
+    background-image: url('../img/Layer 43.png');
+}
+
+.imgpost > .ico,
+.gallerypost > .ico {
+    margin: -21px 0 27px 0;
+}
+
+.imgpost > img {
+    margin: -31px 0 0 -31px;
+    background: #f5f4f5;
+}
+
+.post4 {
+    height: 557px;
+}
+
+.post4 > img {
+    width: 360px;
+    height: 256px;
+}
+
+.quotepost {
+    box-sizing: border-box;
+    margin-top: 45px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(221, 221, 221, 15);
+    background-color: #212429;
+    box-shadow: 0 0 1px 0 rgba(232, 232, 232, .21);
+}
+
+.quotepost > .posttext {
+    font-size: 17px;
+    color: #fff;
+}
+
+.autor {
+    display: block;
+    margin-top: 35px;
+}
+
+.post5 {
+    height: 329px;
+}
+
+.videopost {
+    margin-top: 46px;
+}
+
+.videopost > img {
+    margin: -50px 0 27px -32px;
+    background: #f5f4f5;
+}
+
+.videopost > .posttext {
+    margin-bottom: 45px;
+}
+
+.post6 {
+    height: 568px;
+}
+
+.post7 {
+    height: 399px;
+}
+
+.post8 {
+    height: 555px;
+}
+
+.gallerypost > .imgs {
+    width: 360px;
+    margin: -31px 0 0 -31px;
+}
+
+.gallerypost img {
+    width: 177px;
+    height: 128px;
+    background: #f5f4f5;
+}
+
+.post9 {
+    height: 177px;
+}
+
+.link > p {
+    padding-top: 8px;
+    text-decoration: underline;
+}
+
+.post10 {
+    height: 289px;
+}
+
+.post11 {
+    height: 513px;
+}
+
+.post12 {
+    height: 482px;
+}
+
+.post13 {
+    height: 454px;
+}
+
+.musicpost {
+    margin-top: 46px;
+}
+
+.musicpost > button {
+    width: 135px;
+    height: 135px;
+    margin-top: 15px;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 412px;
+    background-color: #212429;
+}
+
+footer > .columns {
+    padding-bottom: 0;
+}
+
+footer .column {
+    text-align: left;
+}
+
+footer h3 {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 28px;
+    display: block;
+    margin: 50px 0 25px 0;
+    color: #f7f7f7;
+}
+
+footer p {
+    font-family: Hind;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 5px 0;
+    text-align: left;
+    color: #fff;
+}
+
+footer .column:nth-of-type(2) p:nth-of-type(2n) {
+    margin: 5px 0 -2px 23px;
+}
+
+.signature {
+    width: 361px;
+    height: 147px;
+    background-color: #3a3c49;
+}
+
+hr {
+    width: 358px;
+    margin: 15px 0 21px 0;
+    opacity: .4;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+footer img {
+    width: 116px;
+    height: 98px;
+    background-color: #f9f9fb;
+}
+
+.titles {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 41px;
+    background-color: #17191c;
+}
+
+footer span {
+    font-family: Hind;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 2px;
+    color: #fff;
+}
